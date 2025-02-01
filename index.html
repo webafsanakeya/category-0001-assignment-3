@@ -40,12 +40,13 @@
         html,
         body {
             overflow-x: hidden;
+            max-width: 100vw;
         }
     </style>
 
 </head>
 
-<body class="font-adlam bg-white overflow-x-hidden">
+<body class="font-adlam bg-white">
     <!-- Header Section -->
     <header>
         <!-- Navigation -->
@@ -95,11 +96,11 @@
         </nav>
 
         <!-- Banner Section -->
-        <section class=" container mx-auto lg:relative h-[749px] md:flex items-start overflow-hidden">
+        <section class=" container max-w-7xl px-4 mx-auto lg:relative h-[749px] md:flex items-start overflow-hidden">
             <div class="lg:max-w-[1320px] lg:w-full flex flex-col md:flex-row items-center gap-6 relative z-10">
                 <!-- Banner Content -->
                 <div class="w-full">
-                    <h1 class="md:text-[40px] text-3xl font-bold leading-snug text-gray-900 mb-4">
+                    <h1 class="md:text-[40px] text-3xl font-bold leading-snug text-gray-900 mt-20">
                         Pamper Your Pet,<br> Because They Deserve <br>the Best
                     </h1>
                     <p class="text-gray-500 lg:w-[672px] md:-[500px] leading-9 mt-4">
@@ -114,7 +115,7 @@
             </div>
 
             <!-- Banner Image -->
-            <div class="absolute lg:bottom-0 lg:right-0 flex justify-center mt-6">
+            <div class="absolute lg:bottom-0 lg:right-0 w-full flex justify-center overflow-hidden">
                 <img class="object-cover max-w-full h-auto  opacity-0 translate-y-10 transition-all duration-700 ease-in-out"
                     src="c1-assets/cat-big.png" alt="Cat-sitting-on the-floor" onload="this.classList.remove('opacity-0', 'translate-y-10')">
             </div>
@@ -122,10 +123,61 @@
     </header>
 
     <!-- Main Section -->
-    <main class="container mx-auto px-4">
+    <main class="container max-w-7xl mx-auto px-4">
       <!-- Browse by Category -->
-       <section>
-        <h3 class="text-4xl">Browse By Categories</h3>
+       <section class="overflow-hidden my-24">
+        <h3 class="text-4xl ml-6 mt-10">Browse By Categories</h3>
+        <!-- browse card container -->
+         <div class="grid grid-cols-2 lg:grid-cols-6 items-center justify-center text-center p-6 gap-6">
+            <!-- browse card 1 -->
+             <div class="border rounded-2xl bg-[#F9DF8A] space-y-3 shadow-lg">
+                <div class="mt-8">
+                    <img class="rounded-full bg-[white] p-7 mx-auto" src="c1-assets/dog-cartoon.png" alt="">
+                </div>
+                <h4 class="text-xl">Dog</h4>
+                <p class="text-base p-4">3 items</p>
+             </div>
+            <!-- browse card 2 -->
+             <div class="border rounded-2xl bg-[#F9DF8A] space-y-3 shadow-lg">
+                <div class="mt-8">
+                    <img class="rounded-full bg-[white] p-7 mx-auto" src="c1-assets/fish-cartoon.png" alt="">
+                </div>
+                <h4 class="text-xl">Dog</h4>
+                <p class="text-base p-4">3 items</p>
+             </div>
+            <!-- browse card 3 -->
+             <div class="border rounded-2xl bg-[#F9DF8A] space-y-3 shadow-lg">
+                <div class="mt-8">
+                    <img class="rounded-full bg-[white] p-7 mx-auto" src="c1-assets/cat-cartoon.png" alt="">
+                </div>
+                <h4 class="text-xl">Dog</h4>
+                <p class="text-base p-4">3 items</p>
+             </div>
+            <!-- browse card 4 -->
+             <div class="border rounded-2xl bg-[#F9DF8A] space-y-3 shadow-lg">
+               <div class="mt-8">
+                <img class="rounded-full bg-[white] p-7 mx-auto" src="c1-assets/bird-cartoon.png" alt="">
+               </div>
+                <h4 class="text-xl">Dog</h4>
+                <p class="text-base p-4">3 items</p>
+             </div>
+            <!-- browse card 5 -->
+             <div class="border rounded-2xl bg-[#F9DF8A] space-y-3 shadow-lg">
+                <div class="mt-8">
+                    <img class="rounded-full bg-[white] p-7 mx-auto" src="c1-assets/mouse-cartoon.png" alt="">
+                </div>
+                <h4 class="text-xl">Dog</h4>
+                <p class="text-base p-4">3 items</p>
+             </div>
+            <!-- browse card 6 -->
+             <div class="border rounded-2xl bg-[#F9DF8A] space-y-3 shadow-lg">
+                <div class="mt-8">
+                    <img class="rounded-full bg-[white] p-7 mx-auto" src="c1-assets/rabbit-cartoon.png" alt="">
+                </div>
+                <h4 class="text-xl">Dog</h4>
+                <p class="text-base p-4">3 items</p>
+             </div>
+         </div>
        </section>
     </main>
 
